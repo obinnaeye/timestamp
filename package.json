@@ -1,0 +1,22 @@
+{
+  "name": "timeapi",
+  "version": "1.0.0",
+  "description": "my timestam api project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obinnaeye/timestamp.git"
+  },
+  "author": "Nnenanya O.K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/obinnaeye/timestamp/issues"
+  },
+  "homepage": "https://github.com/obinnaeye/timestamp#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
