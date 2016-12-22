@@ -1,0 +1,25 @@
+h1, h2, h3{
+    text-align: center;
+}
+.container{
+    margin: 0 auto;
+    width: 80vw;
+    height: auto;
+}
+.suported, .samples{
+    background: #E5E8E8;
+    margin: 1vw;
+    padding: 2vw;
+    width: 40vw;
+    height: auto;
+    position: absolute;
+    top: 140px;
+    border-radius: 10px;
+}
+
+.suported{
+    left: 5vw;
+}
+.samples{
+    left: 50vw;
+}

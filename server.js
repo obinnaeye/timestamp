@@ -1,10 +1,23 @@
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
+const parseDate = require("./modules/parseDate.js");
 
-app.get('/', function (req, res) {
-  res.send('Hello World!');
+app.use(express.static(__dirname + '/public'));
+
+app.get('/home', function (req, res) {
+    
+  res.send("Welcome Here");
 });
 
-app.listen(8080, function () {
-  console.log('Example app listening on port 8080!');
+app.get('/:times', function (req, res) {
+  const date = req.params.times;
+  const jsonData = parseDate(date);
+    
+  res.send(JSON.stringify(jsonData));
+});
+
+
+
+app.listen(process.env.PORT, function () {
+  console.log('Example app listening on port:', process.env.PORT);
 });
